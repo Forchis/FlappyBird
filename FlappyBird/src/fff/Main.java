@@ -6,7 +6,7 @@ public class Main {
 		System.out.println("Test 1");
 		System.out.println("test 2");
 		System.out.println("Test 223");
-		
-	public static void pozdravy()
+	}	
+	public static void pozdravy1() {
 	}
 }
