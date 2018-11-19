@@ -7,6 +7,6 @@ public class Main {
 		System.out.println("test 2");
 		System.out.println("Test 223");
 		
-	public static void	
+	public static void pozdravy()
 	}
 }
