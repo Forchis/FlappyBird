@@ -8,5 +8,6 @@ public class Main {
 		System.out.println("Test 223");
 	}	
 	public static void pozdravy1() {
+		System.out.println("Test 22335458");//
 	}
 }
