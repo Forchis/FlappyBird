@@ -10,4 +10,8 @@ public class Main {
 	public static void pozdravy1() {
 		System.out.println("Test 22335458");//
 	}
+
+	public static void pozdravy2(){
+		
+	}
 }
