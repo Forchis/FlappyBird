@@ -1,4 +1,4 @@
-package fff;
+package FlappyBird;
 
 public class uzivatel {
 
