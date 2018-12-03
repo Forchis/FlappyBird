@@ -1,9 +1,14 @@
 package FlappyBird;
 
+import static org.lwjgl.glfw.GLFW.*;
+
+import static org.lwjgl.opengl.GL11.*;
+
+
 public class Main implements Runnable{
 	
-	private int width = 12801;
-	private int height = 720;
+	private int width = 1920;
+	private int height = 1080;
 
 	private Thread thread;
 	private boolean running = false;
@@ -16,7 +21,14 @@ public class Main implements Runnable{
 		
 	}
 	
+	private void init() {
+		if (glfwInit() != GL_TRUE) {
+			
+		}
+	}
+	
 	public void run(){
+		init();
 		while (running){
 			update();
 			render();
@@ -27,7 +39,7 @@ public class Main implements Runnable{
 		
 	}
 	
-	public void render() {
+	private void render() {
 		
 	}
 	
