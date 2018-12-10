@@ -1,5 +1,5 @@
 package FlappyBird;
 
-public class Main {
+public class Postava {
 
 }
