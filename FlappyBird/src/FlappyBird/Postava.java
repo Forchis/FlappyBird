@@ -25,6 +25,30 @@ public class Postava {
 		return postava;
 	}
 	
+	public double getWidth() {
+		try { 
+				return postava.getWidth();
+				
+		}
+		catch(Exception e) {
+			return -1;
+		}
+	}
 	
+	public double getHeight() {
+		try {
+				return postava.getHeight();
+		}
+		catch(Exception e) {
+			return -1;
+		}
+	}
 	
+	public void setX(int x) {
+		xLoc = x;
+	}
+	
+	public void setY(int y) {
+		yLoc = y;
+	}
 }
