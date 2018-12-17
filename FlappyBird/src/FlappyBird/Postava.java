@@ -14,13 +14,13 @@ public class Postava {
 		//obrázek postavy 
 	
 	public Postava( int initialWidth, int initialHeight) {
-		postava = Toolkit.getDefaultToolkit().getImage(this.getClass().getResource());//dodat cestu k obrázku
+		//postava = Toolkit.getDefaultToolkit().getImage(this.getClass().getResource());//dodat cestu k obrázku
 		//scaleBird(initialWidth, initialHeight);
 		
 	}
 	
 	public void scaleBird(int width, int height) {
-		postava = postava.getScaledInstance(width, height, Image.SCALE_SMOOTH);
+		//postava = postava.getScaledInstance(width, height, Image.SCALE_SMOOTH);
 
 	}
 	
@@ -57,5 +57,5 @@ public class Postava {
 	
 	//dd
 	
-	
+	}
 }
