@@ -54,9 +54,8 @@ public class Postava {
 	
 	public void setY(int y) {
 		yLoc = y;
-	}
 	
-	//d
+	//dd
 	
 	
 }
