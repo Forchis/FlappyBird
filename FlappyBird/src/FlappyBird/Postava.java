@@ -56,7 +56,7 @@ public class Postava {
 		yLoc = y;
 	}
 	
-	
+	//d
 	
 	
 }
