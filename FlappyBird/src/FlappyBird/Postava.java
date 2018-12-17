@@ -4,6 +4,9 @@ import java.awt.Toolkit;
 
 import javafx.scene.image.Image;
 
+
+
+
 public class Postava {
 	
 	private Image postava;
@@ -16,15 +19,43 @@ public class Postava {
 		
 	}
 	
-	//public scaleBird(int width, int height) {
-		//postava = postava.getScaledInstance(width, height, Image.SCALE_SMOOTH);
-		//postava.
+	public void scaleBird(int width, int height) {
+		postava = postava.getScaledInstance(width, height, Image.SCALE_SMOOTH);
+
+	}
 	
 
 	public Image getBird() {
 		return postava;
 	}
 	
+	public double getWidth() {
+		try { 
+				return postava.getWidth();
+				
+		}
+		catch(Exception e) {
+			return -1;
+		}
+	}
+	
+	public double getHeight() {
+		try {
+				return postava.getHeight();
+		}
+		catch(Exception e) {
+			return -1;
+		}
+	}
+	
+	public void setX(int x) {
+		xLoc = x;
+	}
+	
+	public void setY(int y) {
+		yLoc = y;
+	
+	//dd
 	
 	
 }
