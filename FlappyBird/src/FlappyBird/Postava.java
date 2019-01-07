@@ -1,8 +1,13 @@
 package FlappyBird;
 
-import java.awt.Toolkit;
 
-import javafx.scene.image.Image;
+import java.awt.Graphics;
+import java.awt.Image;
+import java.awt.Toolkit;
+import java.awt.image.BufferedImage;
+
+
+import javafx.scene.shape.Rectangle;
 
 
 
@@ -29,9 +34,9 @@ public class Postava {
 		return postava;
 	}
 	
-	public double getWidth() {
+	public int getWidth() {
 		try { 
-				return postava.getWidth();
+				return (int)postava.getWidth(null);
 				
 		}
 		catch(Exception e) {
@@ -39,9 +44,9 @@ public class Postava {
 		}
 	}
 	
-	public double getHeight() {
+	public int getHeight() {
 		try {
-				return postava.getHeight();
+				return (int)postava.getHeight(null);
 		}
 		catch(Exception e) {
 			return -1;
@@ -55,7 +60,26 @@ public class Postava {
 	public void setY(int y) {
 		yLoc = y;
 	
-	//dd
+	}
 	
+	public int getY() {
+		return yLoc;
+	}
+	
+	public int getX() {
+		return xLoc;
+	}
+	
+	public Rectangle getRectangle() {
+		return (new Rectangle(xLoc, yLoc,postava.getWidth(null), postava.getHeight(null)));
+	}
+	
+	public BufferedImage getBI() {
+		BufferedImage bi = new BufferedImage((int)postava.getWidth(null), (int)postava.getHeight(null), BufferedImage.TYPE_INT_ARGB);
+		Graphics g = bi.getGraphics();
+		g.drawImage(postava, 0, 0, null);
+		g.dispose();
+		return bi;
+		
 	}
 }
