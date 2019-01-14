@@ -31,7 +31,7 @@ public class Postava {
 		/*postava = new Image("C:/ptak.jpg"); 
 		scaleBird(initialWidth, initialHeight);*/
 		
-		  theStage.setTitle( "Canvas Example" );
+		
 	         
 		    Group root = new Group();
 		    Scene theScene = new Scene( root );
@@ -47,17 +47,14 @@ public class Postava {
 		    gc.setLineWidth(2);
 		    Font theFont = Font.font( "Times New Roman", FontWeight.BOLD, 48 );
 		    gc.setFont( theFont );
-		   /* gc.fillText( "Hello, World!", 60, 50 );
-		    gc.strokeText( "Hello, World!", 60, 50 );*/
-		     
-		    //Image earth = new Image( "earth.png" );
+	
 		    gc.drawImage( postava, 180, 100 );
 		         
 		    theStage.show();
 	}
 	
 	public void scaleBird(int width, int height) {
-		//postava = new Image("my/res/flower.png", width, height, false, false);
+		postava = new Image("my/res/flower.png", width, height, false, false);
 		//postava = postava.getScaledInstance(width, height, BufferedImage.SCALE_SMOOTH);
 
 	}

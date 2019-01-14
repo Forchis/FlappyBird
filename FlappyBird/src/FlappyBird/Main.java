@@ -16,7 +16,7 @@ public class Main extends Application {
 	        launch(args);
 	    }
 	    
-	    @Override
+	    
 	    public void start(Stage primaryStage) {
 	    	
 	        StackPane root = new StackPane();
@@ -25,7 +25,7 @@ public class Main extends Application {
 	        primaryStage.setTitle("Flappy Bird"); 
 	        primaryStage.getIcons().add(new Image("/ptak.jpg"));
 	        
-	        //Postava postava = new Postava(50,50,primaryStage);
+	        Postava postava = new Postava(50,50,primaryStage);
 	     
 	        Group root1 = new Group();
 	     
@@ -34,9 +34,7 @@ public class Main extends Application {
 	     
 	        GraphicsContext gc = canvas.getGraphicsContext2D();
 	     
-	        /*Image earth = new Image( "earth.png" );
-	        Image sun   = new Image( "sun.png" );
-	        Image space = new Image( "space.png" );*/
+	     
 	     
 	        final long startNanoTime = System.nanoTime();
 	     
@@ -48,9 +46,7 @@ public class Main extends Application {
 	     
 	                double x = 232 + 128 * Math.cos(t);
 	                double y = 232 + 128 * Math.sin(t);
-	               // gc.drawImage( postava.getImage(), 196, 196 );
-	                //gc.fill(196, 196, 80,80 );
-	                //Rectangle(196, 196, 80,80, 200);
+	             
 	            }
 	        }.start();
 	     

@@ -10,10 +10,10 @@ public HerniObraz (int screenWidth, int screenHeight, boolean isSplash) {
 	this.screenWidth = screenWidth;
 	this.screenHeight = screenHeight;
 	this.isSplash = isSplash;
-}
-
-
-public void paintComponent(Graphics G) {
-	super.paintComponent(g);
 	}
 }
+
+//public void paintComponent(Graphics G) {
+	//super.paintComponent(g);
+	
+
